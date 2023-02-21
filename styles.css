@@ -1,0 +1,13 @@
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+div.information{
+    font-family:'Museo500',serif;
+}
+div.field a{
+    text-decoration: none;
+    color: black;
+}
+div.field a:hover{text-decoration: underline;}
+div.find-out button:hover{ color: red; }

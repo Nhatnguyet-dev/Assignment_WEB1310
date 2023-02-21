@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Museo500;
+    src: url(Museo500.otf);
+}
+*{margin: 0; padding: 0;}
+:root{
+    --color-main: #000054;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 10vh;
+    color: #010955;
+    border-bottom: #010955 solid 3px;
+}
+header ul{
+    /*giải thích tại sao display flex 
+    của nguyên tố này đính với postion này với có tác dụng,
+     còn với element cha của nó thì lại không có tác dụng*/
+    display: flex;
+    list-style: none;
+    /* position: relative; */
+}
+header ul li{
+    margin: auto;
+}
+header ul li.menu-drop{
+    width:380px;
+}
+header ul li.logo{
+    height: 12.5vh;
+    background-color: #E60028;
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+}
+header ul li.logo img{
+    width: 150px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #010955;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+header ul li i{
+    color: red;
+}
+header ul li.menu-drop{
+    margin-left: 5px;
+    position: relative;
+}
+header ul li.menu-drop a{
+    /* margin-bottom: 10px; */
+    padding-left: 25px;
+    display: block;
+}
+header ul li.menu-drop ul.drop-menu{
+    position: absolute;
+    display: none;
+    width:200px;
+    margin:0;
+    padding: 20px 0;
+}
+header ul li.menu-drop ul.drop-menu li a{
+    padding-left: 25px;
+    display: block;
+    line-height: 40px;
+}
+header ul li.menu-drop:hover ul.drop-menu{
+    display: block;
+    background-color: white;
+}
+header ul li.a a{
+    margin: 10px;
+}
+header ul li.search-bar form{
+    display: none;
+    position: absolute;
+}
+header ul li.search-bar:active label{
+    display: block;
+    background-color: white;
+}
+div.acknow-Kulin p.heading{
+    color: var(--color-main);
+    font-family: Museo500, serif;
+    font-size: 24px;
+    padding: auto 30px;
+}
+div.acknow-Kulin div img{
+    justify-items: right;
+    width: 50%;
+}
+div.acknow-Kulin{
+    width: 90%;
+    /* border-bottom:#989898 solid 1px; */
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+}
+div.acknow-Kulin div:first-child{
+    padding: 0;
+}
+footer{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.category{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 288px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 1em;
+    width: 80%;
+    border-bottom: #6E6E6E solid 1px;
+}
+/* ul.category{
+    list-style: none;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+} */
+ul.category ul{
+    list-style: none;
+}
+li.menu-root{
+    padding-bottom: 12px;font-weight:bold; font-size: 14px;
+    color: #333333;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer-legal{
+    color: #6E6E6E;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row: 100px;
+    padding: 2em;
+    margin: 0 auto;
+    width: 80%;
+}
+.footer-legal li{
+    list-style: none;
+    display: inline;
+    margin: 0;
+}
+.footer-legal a{
+    color: #6E6E6E;
+}
+.social-media{
+    width: 32px; height: 32px; border-radius: 50%; align-items: center; border-style: none;
+    cursor: pointer;
+}

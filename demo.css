@@ -1,0 +1,87 @@
+header{
+    background-color: #010955;
+    margin: 0 auto;
+    padding: 0 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 8vh;
+    color: white;
+    border-bottom: #010955 solid 3px;
+}
+header ul{
+    /*giải thích tại sao display flex 
+    của nguyên tố này đính với postion này với có tác dụng,
+     còn với element cha của nó thì lại không có tác dụng*/
+    display: flex;
+    list-style: none;
+    width: 80%;
+    /* position: relative; */
+}
+header ul li{
+    margin: auto;
+}
+header ul li.menu-drop{
+    width:380px;
+}
+header ul li.logo{
+    height: 9vh;
+    background-color: #E60028;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+header ul li.logo img{
+    width: 130px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+header ul li i{
+    color: red;
+}
+header ul li.menu-drop{
+    margin-left: 5px;
+    position: relative;
+}
+header ul li.menu-drop a{
+    /* margin-bottom: 10px; */
+    padding-left: 25px;
+    display: block;
+}
+header ul li.menu-drop div{
+    position: absolute;
+    display: none;
+    margin:0;
+    padding: 20px 0;
+}
+header ul li.menu-drop ul.drop-menu li a{
+    
+    width:100%;
+    padding-left: 25px;
+    display: block;
+    line-height: 40px;
+    border-bottom: white solid 1px;
+}
+header ul li.menu-drop:hover div{
+    display: block;
+    background-color: #010955;
+    
+}
+header ul li.a a{
+    margin: 10px;
+}
+header ul li.search-bar form{
+    display: none;
+    position: absolute;
+}
+header ul li.search-bar:active label{
+    display: block;
+    background-color: white;
+}

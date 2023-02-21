@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Museo500;
+    src: url(Museo500.otf);
+}
+
+header{
+    background-color: #010955;
+    margin: 0 auto;
+    padding: 0 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 8vh;
+    color: white;
+    border-bottom: #010955 solid 3px;
+}
+header ul{
+    /*giải thích tại sao display flex 
+    của nguyên tố này đính với postion này với có tác dụng,
+     còn với element cha của nó thì lại không có tác dụng*/
+    display: flex;
+    list-style: none;
+    width: 80%;
+    /* position: relative; */
+}
+header ul li{
+    margin: auto;
+}
+header ul li.menu-drop{
+    width:380px;
+}
+header ul li.logo{
+    height: 9vh;
+    background-color: #E60028;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+header ul li.logo img{
+    width: 130px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+header ul li i{
+    color: red;
+}
+header ul li.menu-drop{
+    margin-left: 5px;
+    position: relative;
+}
+header ul li.menu-drop a{
+    /* margin-bottom: 10px; */
+    padding-left: 25px;
+    display: block;
+}
+header ul li.menu-drop ul.drop-menu{
+    position: absolute;
+    display: none;
+    width:200px;
+    margin:0;
+    padding: 20px 0;
+}
+header ul li.menu-drop ul.drop-menu li a{
+    padding-left: 25px;
+    display: block;
+    line-height: 40px;
+    border-bottom: white solid 1px;
+}
+header ul li.menu-drop:hover ul.drop-menu{
+    display: block;
+    background-color: #010955;
+    
+}
+header ul li.a a{
+    margin: 10px;
+}
+header ul li.search-bar form{
+    display: none;
+    position: absolute;
+}
+header ul li.search-bar:active label{
+    display: block;
+    background-color: white;
+}
+nav{
+    font-family: Museo500, serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 60px;
+    background-color: #E60028;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    padding: 24px 20px;
+    color: #000054;
+}
+nav ul li:first-child{
+    position: relative;
+}
+div.course-menu{
+    display: none;
+    position: absolute;
+    background: white;
+    width: 1000px;
+    z-index: 1;
+    
+}
+div.course-menu ul{
+    padding: 24px 20px;
+}
+nav ul li:first-child:hover div.course-menu{
+    display: block;
+}
+nav ul li div.course-menu div.column{
+    width: 200px;
+}
+footer{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.category{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 288px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 1em;
+    width: 80%;
+}
+ul.category ul{
+    list-style: none;
+}
+li.menu-root{
+    padding-bottom: 12px;font-weight:bold; font-size: 14px;
+    color: white;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer-legal{
+    color: white;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row: 100px;
+    padding: 2em;
+    margin: 0 auto;
+    width: 80%;
+}
+.footer-legal li{
+    list-style: none;
+    display: inline;
+    margin: 0;
+}
+.footer-legal a{
+    color: white;
+}
+.social-media{
+    width: 32px; height: 32px; border-radius: 50%; align-items: center; border-style: none;
+    cursor: pointer;
+}
